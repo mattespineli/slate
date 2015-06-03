@@ -754,13 +754,13 @@ EXAMPLE SERVICE RESPONSE DATA
 ```
 ```json
 {
-    "filename": “pic.png",
+    "filename": "pic.png",
     "success": "file saved"
 }
 
 
 {
-    "filename": “file.txt",
+    "filename": "file.txt",
     "error": "file NOT saved"
 }
 
@@ -830,7 +830,7 @@ EXAMPLE SERVICE RESPONSE DATA
 			<th colspan=2>Filelist</th>
 		</tr>
 		<tr>
-			<td>addedby<br><font color=#446CB3>F</font>Filelist<br><font color=#CF000F><i>required</i></font></td>
+			<td>addedby<br><font color=#446CB3>Filelist</font><br><font color=#CF000F><i>required</i></font></td>
 			<td>The name of the user who added the file via the UI or API.</td>
 		</tr>
 		<tr>

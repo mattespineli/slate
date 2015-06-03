@@ -712,13 +712,13 @@ EXAMPLE SERVICE RESPONSE DATA
 ```
 ```json
 {
-    "filename": “pic.png",
+    "filename": "pic.png",
     "success": "file saved"
 }
 
 
 {
-    "filename": “file.txt",
+    "filename": "file.txt",
     "error": "file NOT saved"
 }
 
@@ -777,7 +777,7 @@ EXAMPLE SERVICE RESPONSE DATA
 			<th colspan=2>File List Retrieval</th>
 		</tr>
 		<tr>
-			<td>filelist<br><font color=#446CB3>F</font>Filelist<br><font color=#CF000F><i>required</i></font></td>
+			<td>filelist<br><font color=#446CB3>Filelist</font><br><font color=#CF000F><i>required</i></font></td>
 			<td>The list of attached files.</td>
 		</tr>
 		<tr>
