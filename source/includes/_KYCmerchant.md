@@ -25,7 +25,7 @@ Retrieve the current state of a merchant application:<br>
 			<td>The business tax ID</td>
 		</tr>
 		<tr>
-			<td>amn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>amn<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
 			<td>Legal name of the business</td>
 		</tr>
 		<tr>
