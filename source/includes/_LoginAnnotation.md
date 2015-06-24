@@ -38,15 +38,15 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Transaction identifier. If not provided, an ID will be allocated</td>
+			<td>Transaction identifier. If not provided, an ID will be allocated<br><br>Maximum length is 40 characters</td>
 		</tr>
 		<tr>
 			<td>man<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Account name for the user</td>
+			<td>Account name for the user<br><br>Maximum length is 60 characters</td>
 		</tr>
 		<tr>
 			<td>tea<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Email address for the user</td>
+			<td>Email address for the user<br><br>Maximum length is 60 characters</td>
 		</tr>
 		<tr>
 			<td>soc<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -54,7 +54,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>ip<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Customer's IP address</td>
+			<td>Customer's IP address<br><br>Maximum length is 40 characters</td>
 		</tr>
 		<tr>
 			<td>dfp<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>

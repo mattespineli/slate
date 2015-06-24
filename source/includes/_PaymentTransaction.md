@@ -56,7 +56,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Transaction currency</td>
+			<td>ISO 4217 currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>pppi<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -166,15 +166,15 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Transaction identifier. If not provided, an ID will be allocated</td>
+			<td>Transaction identifier. If not provided, an ID will be allocated<br><br>Maximum length is 40 characters</td>
 		</tr>
 		<tr>
 			<td>man<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Account name for the user</td>
+			<td>Account name for the user<br><br>Maximum length is 60 characters</td>
 		</tr>
 		<tr>
 			<td>tea<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Email address for the user</td>
+			<td>Email address for the user<br><br>Maximum length is 60 characters</td>
 		</tr>
 		<tr>
 			<td>soc<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -182,7 +182,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>ip<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Customer's IP address</td>
+			<td>Customer's IP address<br><br>Maximum length is 40 characters</td>
 		</tr>
 		<tr>
 			<td>dfp<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -207,11 +207,11 @@ EXAMPLE SERVICE REQUEST
 		<tr>
 			<td>pccn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>Credit card unique identifier (hash). IdentityMind will supply procedure to generate hash.<br><br> 
-			<b>Note</b>: The hash must be of the full card number, not a masked or tokenized representation.</td>
+			<b>Note</b>: The hash must be of the full card number, not a masked or tokenized representation.<br><br>Maximum length is 128 characters</td>
 		</tr>
 		<tr>
 			<td>pcct<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>A masked or tokenized version of the credit card number. IdentityMind will supply procedure to generate token.</td>
+			<td>A masked or tokenized version of the credit card number. IdentityMind will supply procedure to generate token.<br><br>Maximum length is 64 characters</td>
 		</tr>
 		<tr>
 			<td>pcty<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -226,11 +226,11 @@ EXAMPLE SERVICE REQUEST
 		<tr>
 			<td>phash<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>Generic payment account unique identifier (hash). This is used when IdentityMind does not natively support the payment type.<br><br> 
-			<b>Note</b>: The hash must be of the full account number, not a masked or tokenized representation.</td>
+			<b>Note</b>: The hash must be of the full account number, not a masked or tokenized representation.<br><br>Maximum length is 128 characters</td>
 		</tr>
 		<tr>
 			<td>ptoken<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>A masked or tokenized version of the account token.</td>
+			<td>A masked or tokenized version of the account token.<br><br>Maximum length is 64 characters</td>
 		</tr>
 		<tr>
 			<td>profile<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -246,55 +246,55 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>bsn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) street. Includes house number, street name, and apartment number.</td>
+			<td>Billing (source) street. Includes house number, street name, and apartment number.<br><br>Maximum length is 100 characters</td>
 		</tr>
 		<tr>
 			<td>bco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) country. ISO 3166 alpha-2 country code of the billing address of the transaction, encoded as a string. Default is <code>US</code>.</td>
+			<td>Billing (source) country. ISO 3166 alpha-2 country code of the billing address of the transaction, encoded as a string. Default is <code>US</code>.<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>bz<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) zip / postal code</td>
+			<td>Billing (source) zip / postal code<br><br>Maximum length is 20 characters</td>
 		</tr>
 		<tr>
 			<td>bc<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) city</td>
+			<td>Billing (source) city<br><br>Data truncates to 30 characters</td>
 		</tr>
 		<tr>
 			<td>bs<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) state</td>
+			<td>Billing (source) state<br><br>Maximum length is 30 characters</td>
 		</tr>
 		<tr>
 			<td>sfn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) first name</td>
+			<td>Shipping (destination) first name<br><br>Maximum length is 30 characters</td>
 		</tr>
 		<tr>
 			<td>sln<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) last name</td>
+			<td>Shipping (destination) last name<br><br>Maximum length is 50 characters</td>
 		</tr>
 		<tr>
 			<td>ssn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) street. Includes house number, street name, and apartment number.</td>
+			<td>Shipping (destination) street. Includes house number, street name, and apartment number.<br><br>Maximum length is 100 characters</td>
 		</tr>
 		<tr>
 			<td>sco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) country. ISO 3166 alpha-2 country code of the shipping address of the transaction, encoded as a string. Default is <code>US</code></td>
+			<td>Shipping (destination) country. ISO 3166 alpha-2 country code of the shipping address of the transaction, encoded as a string. Default is <code>US</code><br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>sz<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) zip / postal code</td>
+			<td>Shipping (destination) zip / postal code<br><br>Maximum length is 20 characters</td>
 		</tr>
 		<tr>
 			<td>sc<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) city</td>
+			<td>Shipping (destination) city<br><br>Data truncates to 30 characters</td>
 		</tr>
 		<tr>
 			<td>ss<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) state</td>
+			<td>Shipping (destination) state<br><br>Maximum length is 30 characters</td>
 		</tr>
 		<tr>
 			<td>aflid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Affiliate ID. The client specific identifier for the affiliate that generated this transaction.</td>
+			<td>Affiliate ID. The client specific identifier for the affiliate that generated this transaction.<br><br>Maximum length is 100 characters</td>
 		</tr>
 		<tr>
 			<td>aflsd<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -302,7 +302,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>blg<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Customer browser language</td>
+			<td>Customer browser language. Values are defined in ISO 639-1.</td>
 		</tr>
 		<tr>
 			<td>clat<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -314,24 +314,24 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>phn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Customer primary phone number</td>
+			<td>Customer primary phone number<br><br>Maximum length is 60 characters</td>
 		</tr>
 		<tr>
 			<td>pm<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Customer mobile phone number</td>
+			<td>Customer mobile phone number<br><br>Maximum length is 60 characters</td>
 		</tr>
 		<tr>
 			<td>pw<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Customer work phone number</td>
+			<td>Customer work phone number<br><br>Maximum length is 60 characters</td>
 		</tr>
 		<tr>
 			<td>pach<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>ACH account unique identifier (hash)<br><br>
-			<b>Note</b>: The hash must be of the full account number, not a masked or tokenized representation</td>
+			<b>Note</b>: The hash must be of the full account number, not a masked or tokenized representation<br><br>Maximum length is 128 characters</td>
 		</tr>
 		<tr>
 			<td>pbc<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Hash of the unique identifier for a Bitcoin wallet</td>
+			<td>Hash of the unique identifier for a Bitcoin wallet<br><br>Maximum length is 128 characters</td>
 		</tr>
 		<tr>
 			<td>memo<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -494,7 +494,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font></td>
-			<td>The transaction ID.</td>
+			<td>The transaction ID.<br><br>Maximum length is 40 characters</td>
 		</tr>
 		<tr>
 			<td>frn<br><font color=#446CB3>string</font></td>
@@ -707,7 +707,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The ISO 4217 currency code of the transaction encoded as a string. Default is <code>USD</code>.</td>
+			<td>ISO 4217 currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>error_code<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
@@ -770,16 +770,14 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Merchant unique identifier for the original authorization transaction. The transaction ID must be encoded as a string (e.g. <code>"tid" : "123455"</code>).</td>
+			<td>Merchant unique identifier for the original authorization transaction. The transaction ID must be encoded as a string (e.g. <code>"tid" : "123455"</code>).<br><br>Maximum length is 40 characters</td>
 		</tr>
 		<tr>
 			<th colspan=2>Sub Merchant</th>
 		</tr>
 		<tr>
 			<td>smid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>A unique identifier for the merchant for whom this transaction is being processed.
-			<br><br>
-			<b>Note</b>: The value of the smid should not include the apostrophe symbol.</td>
+			<td><font color=#D91E18>Deprecated</font><br><br>A unique identifier for the merchant for whom this transaction is being processed. Succeeded by the <code>profile</code> field in IDMRisk 1.19..</td>
 		</tr>
 		<tr>
 			<th colspan=2>Credit Card</th>
@@ -788,11 +786,11 @@ EXAMPLE SERVICE RESPONSE DATA
 			<td>pccn<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
 			<td>Credit card unique identifier (hash) while obscuring actual number. IdentityMind will supply procedure to generate hash.
 			<br><br>
-			<b>Note</b>: The hash must be of the full card number, not a masked or tokenized representation.<br><br><i>Required if the provided <code>tid</code> does not refer to a transaction previously processed by eDNA.</i></td>
+			<b>Note</b>: The hash must be of the full card number, not a masked or tokenized representation.<br><br><i>Required if the provided <code>tid</code> does not refer to a transaction previously processed by eDNA.</i><br><br>Maximum length is 128 characters</td>
 		</tr>
 		<tr>
 			<td>pcct<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
-			<td>A masked or tokenized version of the credit card number. IdentityMind will supply procedure to generate token. Maximum length is 64 characters.<br><br><i>Required if the provided <code>tid</code> does not refer to a transaction previously processed by eDNA</i></td>
+			<td>A masked or tokenized version of the credit card number. IdentityMind will supply procedure to generate token.<br><br><i>Required if the provided <code>tid</code> does not refer to a transaction previously processed by eDNA<br><br>Maximum length is 64 characters</i></td>
 		</tr>
 		<tr>
 			<td>ric<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -813,11 +811,11 @@ EXAMPLE SERVICE RESPONSE DATA
 			<td>pccn2<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>Hash of the credit card to which the chargeback amount is to be credited if it is different from the credit card where the chargeback was reported.
 			<br><br>
-			<b>Note</b>: The hash must be of the full card number, not a masked or tokenized representation.</td>
+			<b>Note</b>: The hash must be of the full card number, not a masked or tokenized representation.<br><br>Maximum length is 128 characters</td>
 		</tr>
 		<tr>
 			<td>pcct2<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Token of the credit card to which the chargeback amount is to be credited if it is different from the credit card where the chargeback was reported.</td>
+			<td>Token of the credit card to which the chargeback amount is to be credited if it is different from the credit card where the chargeback was reported.<br><br>Maximum length is 64 characters</td>
 		</tr>
 		<tr>
 			<td>ric2<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -898,7 +896,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The ISO 4217 currency code of the transaction encoded as a string. Default is <code>USD</code>.</td>
+			<td>ISO 4217 currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>reason<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -924,7 +922,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>smid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>A unique identifier for the merchant for whom this transaction is being processed.</td>
+			<td><font color=#D91E18>Deprecated</font><br><br>A unique identifier for the merchant for whom this transaction is being processed. Succeeded by the <code>profile</code> field in IDMRisk 1.19.</td>
 		</tr>
 		<tr>
 			<th colspan=2>Credit Card</th>
@@ -938,7 +936,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>pcct<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>A masked or tokenized version of the credit card number. IdentityMind will supply procedure to generate the token.</td>
+			<td>A masked or tokenized version of the credit card number. IdentityMind will supply procedure to generate the token.<br><br>Maximum length is 64 characters</td>
 		</tr>
 		<tr>
 			<td>ric<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -973,11 +971,11 @@ EXAMPLE SERVICE RESPONSE DATA
 			<td>phash<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
 			<td>Account unique identifier (hash) while obscuring actual number. This is used when IdentityMind does not natively support the payment type.
 			<br><br>
-			<b>Note</b>: The hash must be of the full account number, not a masked or tokenized representation.</td>
+			<b>Note</b>: The hash must be of the full account number, not a masked or tokenized representation.<br><br>Maximum length is 128 characters</td>
 		</tr>
 		<tr>
 			<td>ptoken<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>A masked or tokenized version of the account token.</td>
+			<td>A masked or tokenized version of the account token.<br><br>Maximum length is 64 characters</td>
 		</tr>
 	</table>
 
@@ -1227,7 +1225,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The transaction ID.<br><br>If the <code>tid</code> is provided with a new/different value in a feedback call, this value will overwrite the old transaction ID. The new transaction ID will then be used to reference the transaction, and the old ID will be invalid.</td>
+			<td>The transaction ID.<br><br>If the <code>tid</code> is provided with a new/different value in a feedback call, this value will overwrite the old transaction ID. The new transaction ID will then be used to reference the transaction, and the old ID will be invalid.<br><br>Maximum length is 40 characters</td>
 		</tr>
 		<tr>
 			<td>validation_status<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -1267,7 +1265,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Transaction currency</td>
+			<td>ISO 4217 currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>bank_status<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>

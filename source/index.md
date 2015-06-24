@@ -7,7 +7,7 @@ language_tabs:
 toc_footers:
   - <a href='http://www.identitymindglobal.com/'>IdentityMind Global Home</a>
   - <a href='http://documentation.identitymindglobal.com/'>IDM Support Portal</a>
-  - eDNA API Reference Beta v1.1.2
+  - eDNA API Reference Beta v1.1.4
 
 includes:	
   - PaymentTransaction
