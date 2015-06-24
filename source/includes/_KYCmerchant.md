@@ -194,11 +194,11 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>bfn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) first name</td>
+			<td>Billing (source) first name<br><br>Maximum length is 30 characters</td>
 		</tr>
 		<tr>
 			<td>bln<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) last name</td>
+			<td>Billing (source) last name<br><br>Maximum length is 50 characters</td>
 		</tr>
 		<tr>
 			<td>pccn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
