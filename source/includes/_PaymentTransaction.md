@@ -790,7 +790,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>pcct<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
-			<td>A masked or tokenized version of the credit card number. IdentityMind will supply procedure to generate token.<br><br><i>Required if the provided <code>tid</code> does not refer to a transaction previously processed by eDNA<br><br>Maximum length is 64 characters</i></td>
+			<td>A masked or tokenized version of the credit card number. IdentityMind will supply procedure to generate token.<br><br><i>Required if the provided <code>tid</code> does not refer to a transaction previously processed by eDNA</i><br><br>Maximum length is 64 characters</td>
 		</tr>
 		<tr>
 			<td>ric<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
