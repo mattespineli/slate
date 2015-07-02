@@ -358,76 +358,108 @@ EXAMPLE SERVICE RESPONSE DATA
             {
                 "details": "ed:1(false) = true",
                 "fired": false,
-                "test": "ed:1" 
+                "test": "ed:1",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "ed:34(false) = true",
                 "fired": false,
-                "test": "ed:34" 
+                "test": "ed:34",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "ed:38(false) = true",
                 "fired": false,
-                "test": "ed:38" 
+                "test": "ed:38",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "true",
-                "test": "id:6" 
+                "test": "id:6",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "true",
-                "test": "id:0" 
+                "test": "id:0",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "true",
-                "test": "id:1" 
+                "test": "id:1",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "ed:2(false) = true",
                 "fired": false,
-                "test": "ed:2" 
+                "test": "ed:2",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "false",
-                "test": "id:9" 
+                "test": "id:9",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "ed:36(false) = true",
                 "fired": false,
-                "test": "ed:36" 
+                "test": "ed:36",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "ed:61(false) = true",
                 "fired": false,
-                "test": "ed:61" 
+                "test": "ed:61",
+        		"ts": 1435860115000,
+        		"stage": "1" 
             },
             {
                 "details": "ed:32(false) = true",
                 "fired": false,
-                "test": "ed:32" 
+                "test": "ed:32",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "id:1(true) = false",
                 "fired": false,
-                "test": "id:1" 
+                "test": "id:1",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "ed:37(false) = true",
                 "fired": false,
-                "test": "ed:37" 
+                "test": "ed:37",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "false",
-                "test": "id:8" 
+                "test": "id:8",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "ed:87(false) = true",
                 "fired": false,
-                "test": "ed:87" 
+                "test": "ed:87",
+        		"ts": 1435860115000,
+        		"stage": "1"
             },
             {
                 "details": "false",
-                "test": "id:7" 
+                "test": "id:7",
+        		"ts": 1435860115000,
+        		"stage": "1"
             }
         ],
         "sc": []
@@ -696,6 +728,14 @@ EXAMPLE SERVICE RESPONSE DATA
 		<tr>
 			<td>details<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>Textual result of the condition</td>
+		</tr>
+		<tr>
+			<td>stage<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>The KYC stage used in the application's evaluation</td>
+		</tr>
+		<tr>
+			<td>ts<br><font color=#446CB3>integer</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>The timestamp for the test, in Unix time</td>
 		</tr>
 	</table>
 
