@@ -735,7 +735,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ts<br><font color=#446CB3>integer</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The timestamp for the test, in Unix time</td>
+			<td>The timestamp for the test, in milliseconds UTC</td>
 		</tr>
 	</table>
 
