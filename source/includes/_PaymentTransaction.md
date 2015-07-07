@@ -162,7 +162,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>m<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Merchant Identifier. Used when a reseller is proxying requests for their merchants. Please contact IdentityMind support for further details of the usage of this field</td>
+			<td>Reflects the merchant's <code>merchantAPIname</code> that was assigned on account creation</td>
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
