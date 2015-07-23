@@ -71,7 +71,7 @@ Retrieve the current state of a consumer application:<br>
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Transaction identifier. If not provided, an ID will be allocated<br><br>Maximum length is 40 characters</td>
+			<td>Transaction identifier. If not provided, an ID will be allocated<br><br>Maximum length is 32 characters</td>
 		</tr>
 		<tr>
 			<td>man<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
