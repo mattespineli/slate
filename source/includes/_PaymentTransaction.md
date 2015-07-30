@@ -89,17 +89,17 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>moto<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The MOTO/eCommerce indicator describes the type of eCommerce transaction that is taking place. 
+			<td>The MOTO/ECI (Electronic Commerce Indicator) indicator describes the type of eCommerce transaction that is taking place. 
 				<ul type="disc">
 					<li><code> </code> - (space) card present</li>
-					<li><code>1</code> - one time mail / phone order</li>
-					<li><code>2</code> - recurring payment</li>
-					<li><code>3</code> - installment payment</li>
-					<li><code>4</code> - other</li>
-					<li><code>5</code> - 3D secure full</li>
-					<li><code>6</code> - 3D secure merchant</li>
-					<li><code>7</code> - eCommerce (channel encrypted)</li>
-					<li><code>8</code> - eCommerce (non-secure)</li>
+					<li><code>1</code> - MOTO: Single Transaction mail / telephone order</li>
+					<li><code>2</code> - MOTO: Recurring Transaction</li>
+					<li><code>3</code> - MOTO: Installment Payment</li>
+					<li><code>4</code> - MOTO: Deferred Transaction</li>
+					<li><code>5</code> - ECI: 3-D Secure Electronic Commerce Transaction</li>
+					<li><code>6</code> - ECI: 3-D Secure Non-Authenticated Electronic Commerce Transaction</li>
+					<li><code>7</code> - ECI: Channel Encrypted Transaction</li>
+					<li><code>8</code> - ECI: Non-Secure Electronic Commerce Transaction</li>
 				</ul>
 				The default is <code>7</code> if the field is not supplied.		
 			</td>
