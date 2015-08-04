@@ -211,7 +211,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>bco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) country. ISO 3166-1 alpha-2 country code of the billing address of the transaction, encoded as a string. Default is US.<br><br>Maximum length is 2 characters</td>
+			<td>Billing (source) country. ISO 3166-1 alpha-2 country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
 		</tr>
 		<tr>
 			<td>bz<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -239,7 +239,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>sco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) country. ISO 3166-1 alpha-2 country code of the billing address of the transaction, encoded as a string. Default is US.<br><br>Maximum length is 2 characters</td>
+			<td>Shipping (destination) country. ISO 3166-1 alpha-2 country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
 		</tr>
 		<tr>
 			<td>sz<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
