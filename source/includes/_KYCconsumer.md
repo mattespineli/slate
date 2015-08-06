@@ -906,6 +906,8 @@ EXAMPLE SERVICE RESPONSE DATA
 
 ## Application Feedback
 
+Providing feedback is an <b>integral</b> part of the IDM platform. Feedback allows us to build more accurate models of entity reputations, strengthening the platform for all IDM users. Remember, no customer purchasing behavior or personal information is shared through our network, only reputation data. This enables you to identify good or bad users even if you've never done business with them before. Other than the reputation data itself, data from other IDM clients remain private. Clients cannot see where the reputation data originated.
+
 Provide feedback to IdentityMind as to the acceptance or rejection of an application by the merchant.
 
 `POST https://edna.identitymind.com/im/account/consumer/<transaction_id>/accepted`
