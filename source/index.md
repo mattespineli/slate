@@ -21,7 +21,7 @@ search: true
 
 ---
 
-# eDNA 1.19 API
+# eDNA 1.20 API
 
 #### Transaction Evaluation
 

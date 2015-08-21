@@ -597,6 +597,9 @@ The bank account number token should be included in the JSON string of the reque
 
 ## Change History
 
+#### 1.20
+- Added support for custom fields. See <code>memo</code> field in API document for more information.
+
 #### 1.19
 - Added 1.18 backwards compatibility mode (rule number and name changes still relevant)
 - Scorecard now included in transaction and transfer results
