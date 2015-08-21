@@ -337,6 +337,21 @@ ed:512|  28 Day IP Transaction Velocity
 ed:513|  28 Day Account Creation Velocity
 ed:514|  28 Day IP Account Creation Velocity
 ed:515|  24 Hour Shipping Address Velocity
+bs:0| IDM Business Risk
+bs:2| IDM Business Risk: Business Match Score
+bs:3| IDM Business Risk: Matched DBA
+bs:4| IDM Business Risk: Website Match
+bs:301| IDM Business Risk: Commerical Credit Risk Score
+bs:302| IDM Business Risk: Financial Stability Risk Score
+bs:303| IDM Business Risk: Derogatory Legal Count
+bs:304| IDM Business Risk: Fraud Risk Indicators
+bs:701| IDM Business Risk: Active Business
+bs:702| IDM Business Risk: OFAC Match
+bs:703| IDM Business Risk: Consumer Risk Indicator
+bs:704| IDM Business Risk: Business Risk Indicator
+bs:2901| IDM Business Risk: Associated Business Entities: Sanctions Screening
+bs:2902| IDM Business Risk: Associated Business Entities: Risk Levels
+bs:2903| IDM Business Risk: Associated Business Entities: Data Risk Level
 tc:0|	TIN Verification
 tc:1|	TIN Verification: TIN and Name Match
 tc:2|	TIN Verification: Possible Death Master File Match Found
@@ -599,6 +614,7 @@ The bank account number token should be included in the JSON string of the reque
 
 #### 1.20
 - Added support for custom fields. See <code>memo</code> field in API document for more information.
+- Added IDM Business Risk security tests
 
 #### 1.19
 - Added 1.18 backwards compatibility mode (rule number and name changes still relevant)
