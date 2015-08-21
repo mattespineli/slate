@@ -240,7 +240,9 @@ Retrieve the current state of a consumer application:<br>
 		</tr>
 		<tr>
 			<td>memo<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Free-form memo field for client use</td>
+			<td>Free-form memo field for client use.<br><br>
+			<code>memo</code> and <code>memo1</code>-<code>memo40</code> are available for use as custom fields. These custom fields are viewable, searchable, sortable, and can be labelled using the IdentityMind UI. For example, you can send your SKU through <code>memo1</code>, Quantity through <code>memo2</code>, and Region through <code>memo3</code>.
+			</td>
 		</tr>
 	</table>
 
