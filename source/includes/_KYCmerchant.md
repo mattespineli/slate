@@ -93,7 +93,7 @@ Retrieve the current state of a merchant application:<br>
 			<td>Whether the business accepts Bitcoin</td>
 		</tr>
 		<tr>
-			<td>merchantgroup<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>merchantgroup<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required for underwriting</i></font></td>
 			<td>Aggregation that defines the KYC policy configuration and risk monitoring thresholds</td>
 		</tr>
 		<tr>
