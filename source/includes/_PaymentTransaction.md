@@ -67,6 +67,14 @@ EXAMPLE SERVICE REQUEST
 			<td>PayPal Payer Email</td>
 		</tr>
 		<tr>
+			<td>ppps<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>PayPal Payer Status</td>
+		</tr>
+		<tr>
+			<td>pppc<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>PayPal Payer Confirmed Address</td>
+		</tr>
+		<tr>
 			<td>reason<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>Free-form descriptive text providing additional information about the feedback</td>
 		</tr>
