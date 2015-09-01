@@ -37,6 +37,6 @@ IdentityMind uses an SSL Server certificate for the client to authenticate the s
 
 #### Testing on Different Environments
 
-To test using different environments, replace https://edna.identitymind.com with the relevant URL. For example, to send a Payment Transaction to the Sandbox environment, use https://sandbox.identitymind.com/im/transaction, or to send a transaction to Staging, use https://staging.identitymind.com/im/transaction.
+To test using different environments, replace `https://edna.identitymind.com` with the relevant URL. For example, to send a Payment Transaction to the Sandbox environment, use `https://sandbox.identitymind.com/im/transaction`, or to send a transaction to Staging, use `https://staging.identitymind.com/im/transaction`.
 
 <link rel="icon" href="http://www.identitymindglobal.com/wp-content/uploads/2013/05/Favicon.png" type="image/png">
