@@ -455,7 +455,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font></td>
-			<td>The transaction ID<br><br>Maximum length is 40 characters</td>
+			<td>The transaction ID</td>
 		</tr>
 		<tr>
 			<td>frn<br><font color=#446CB3>string</font></td>

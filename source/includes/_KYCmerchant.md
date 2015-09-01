@@ -491,7 +491,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>mtid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The transaction ID for this KYC. This ID should be provided on subsequent updates to the KYC<br><br>Maximum length is 40 characters</td>
+			<td>The transaction ID for this KYC. This ID should be provided on subsequent updates to the KYC.</td>
 		</tr>
 		<tr>
 			<td>acVerification<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -616,7 +616,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>tid<br><font color=#446CB3>string</font></td>
-			<td>The transaction ID.<br><br>Maximum length is 40 characters</td>
+			<td>The transaction ID.</td>
 		</tr>		
 		<tr>
 			<th colspan=2>Document Verification</th>
