@@ -991,7 +991,9 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ptoken<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>A masked or tokenized version of the account token.<br><br>Maximum length is 64 characters</td>
+			<td>A masked or tokenized version of the account token.
+			<br><br>If the payment instrument is Skrill, the ptoken should follow the format <code>skrill:emailaddress</code>. For example, <code>skrill:johndoe@gmail.com</code>.
+			<br><br>Maximum length is 64 characters</td>
 		</tr>
 	</table>
 
