@@ -233,12 +233,16 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>phash<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Generic payment account unique identifier (hash). This is used when IdentityMind does not natively support the payment type.<br><br> 
+			<td>Generic payment account unique identifier (hash). This is used when IdentityMind does not natively support the payment type.<br><br>
+			If the payment instrument is Skrill, this will be a hash of the Skrill account email address.
+			<br><br>			
 			<b>Note</b>: The hash must be of the full account number, not a masked or tokenized representation.<br><br>Maximum length is 128 characters</td>
 		</tr>
 		<tr>
 			<td>ptoken<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>A masked or tokenized version of the account token.<br><br>Maximum length is 64 characters</td>
+			<td>A masked or tokenized version of the account token.
+			<br><br>If the payment instrument is Skrill, the ptoken should follow the format <code>skrill:emailaddress</code>. For example, <code>skrill:johndoe@gmail.com</code>.
+			<br><br>Maximum length is 64 characters</td>
 		</tr>
 		<tr>
 			<td>profile<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -980,6 +984,8 @@ EXAMPLE SERVICE RESPONSE DATA
 		<tr>
 			<td>phash<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
 			<td>Account unique identifier (hash) while obscuring actual number. This is used when IdentityMind does not natively support the payment type.
+			<br><br>
+			If the payment instrument is Skrill, this will be a hash of the Skrill account email address.
 			<br><br>
 			<b>Note</b>: The hash must be of the full account number, not a masked or tokenized representation.<br><br>Maximum length is 128 characters</td>
 		</tr>
