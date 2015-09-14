@@ -65,6 +65,14 @@ Retrieve the current state of a merchant application:<br>
 			<td>Alternate "doing business as" name of the business</td>
 		</tr>
 		<tr>
+			<td>bin<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>The business risk ID</td>
+		</tr>
+		<tr>
+			<td>website<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>The URL of the business' website</td>
+		</tr>
+		<tr>
 			<td>businesstype<br><font color=#446CB3>BusinessType</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>The type of business. Possible values are:
 				<ul type="disc">
