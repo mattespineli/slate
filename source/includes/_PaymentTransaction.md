@@ -672,9 +672,9 @@ EXAMPLE SERVICE RESPONSE DATA
 	
 ## Chargeback Notification
 
-Notifies that a chargeback occurred on a transaction. The transaction may be a Payment Transaction or an Account Transfer.
+Notifies IdentityMind that a chargeback occurred on a transaction. The transaction may be a Payment Transaction or an Account Transfer.
 
-In the case of a chargeback on a transaction that eDNA has not previously processed, payment instrument information is required.
+In the case of a chargeback on a transaction that eDNA has not previously processed, the payment instrument information is required.
 
 Request chargeback notification evaluation:<br>
 `POST https://edna.identitymind.com/im/jax/chargeback/`
@@ -861,7 +861,7 @@ EXAMPLE SERVICE RESPONSE DATA
 
 ## Credit Notification
 
-Notifies that a credit occurred on a transaction.
+Notifies IdentityMind that a credit occurred on a transaction.
 
 In the case of credit or blind credit on a transaction that eDNA has not previously processed, the payment instrument information is required.
 
@@ -999,7 +999,7 @@ EXAMPLE SERVICE RESPONSE DATA
 
 ## Transaction Neutral/Refund Notification
 
-Notifies that a refund occurred on a transaction. All arguments are optional.
+Notifies IdentityMind that a refund occurred on a transaction. All arguments are optional.
 
 The transaction ID is part of the URL. The "refund-ok" URL should be used when the merchant believes that the refund is legitimate. The "refund-fraud" URL should be used when the merchant believes there is fraud, but a refund is being made to avoid a later chargeback.
 
@@ -1085,11 +1085,11 @@ EXAMPLE SERVICE RESPONSE DATA
 
 ## Transaction Feedback
 
-Providing feedback is an <b>integral</b> part of the IDM platform. Feedback allows us to build more accurate models of entity reputations, strengthening the platform for all IDM users. Remember, no customer purchasing behavior or personal information is shared through our network, only reputation data. This enables you to identify good or bad users even if you've never done business with them before. Other than the reputation data itself, data from other IDM clients remain private. Clients cannot see where the reputation data originated.
+Providing feedback is an <b>integral</b> part of the IdentityMind platform. Feedback allows us to build more accurate models of entity reputations, strengthening the platform for all IDM users. Remember, no customer purchasing behavior or personal information is shared through our network, only reputation data. This enables you to identify good or bad users even if you've never done business with them before. Other than the reputation data itself, data from other IDM clients remain private. Clients cannot see where the reputation data originated.
 
 ##### Transaction Neutral/Refund Notification
 
-Notifies IdentityMind that a refund occurred on a transaction.
+Notify IdentityMind that a refund occurred on a transaction.
 
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/refund-ok`
 
@@ -1103,7 +1103,7 @@ Notifies IdentityMind that a refund occurred on a transaction.
 
 ##### Bank Authorization Feedback
 
-Notifies IdentityMind of the acceptance or rejection of the transaction that was previously analyzed with the given transaction ID.
+Notify IdentityMind of the acceptance or rejection of the transaction that was previously analyzed with the given transaction ID.
 
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/bank-accepted`
 
@@ -1111,25 +1111,25 @@ Notifies IdentityMind of the acceptance or rejection of the transaction that was
 
 ##### Merchant Final Resolution Feedback
 
-Provides feedback that the transaction has been accepted after review.<br>
+Provide feedback that the transaction has been accepted after review.<br>
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/accepted`
 
-Provides feedback that the transaction has been rejected after review due to suspected fraud.<br>
+Provide feedback that the transaction has been rejected after review due to suspected fraud.<br>
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/rejected`
 
-Provides feedback that the transaction has been rejected after review.<br>
+Provide feedback that the transaction has been rejected after review.<br>
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/rejected-ok`
 
-Provides feedback that the transaction has been accepted due to user validation.<br>
+Provide feedback that the transaction has been accepted due to user validation.<br>
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/accepted-user-validated`
 
-Provides feedback that the transaction has been rejected due to user validation failure.<br>
+Provide feedback that the transaction has been rejected due to user validation failure.<br>
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/rejected-user-failed-validation`
 
-Provides feedback that the transaction has been accepted by default.<br>
+Provide feedback that the transaction has been accepted by default.<br>
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/accepted-default`
 
-Provides feedback that the transaction has been rejected by default.<br>
+Provide feedback that the transaction has been rejected by default.<br>
 `POST https://edna.identitymind.com/im/transaction/<transaction_id>/rejected-default`
 
 <aside class="notice">The transaction may be a payment transaction or an account transfer. All arguments are optional.</aside>
