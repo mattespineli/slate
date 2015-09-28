@@ -353,11 +353,21 @@ EXAMPLE SERVICE REQUEST
 			<br><br>
 			For example, you can send SKU through <code>memo1</code>, Quantity through <code>memo2</code>, and Region through <code>memo3</code>.
 			<br><br>
-			Memo fields are always sent as a string in the API. eDNA can convert the string into a simple type (date, iteger), or complex time (Address). For complex types, the string is a JSON encoding of the complex time. You can map the memo field from a string type to another types through the IdentityMind UI under Admin>Merchant Preferences>Custom Field Labels UI.
+			Memo fields are always sent as a string in the API. eDNA can convert the string into a simple type (date, iteger), or complex time (Address). For complex types, the string is a JSON encoding of the complex time. You can map the memo field from a string type to another types through the IdentityMind UI under Admin > Merchant Preferences > Custom Field Labels UI.
 			<br><br>
-			Supported simple types: integer, double, date, boolean
+			Supported simple types:
+			<ul>
+				<li>integer</li> 
+				<li>double</li>
+				<li>date</li>
+				<li>boolean</li>
+			</ul>
 			<br><br>
-			Supported complex type: Address
+			Supported complex type: 
+			<ul>
+				<li>Address</li>
+			</ul>
+			Address properties:
 			<ul>
 				<li>street</li>
 				<li>city</li>
