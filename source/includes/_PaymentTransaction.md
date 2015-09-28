@@ -375,8 +375,11 @@ EXAMPLE SERVICE REQUEST
 				<li>state</li>
 				<li>zip</li>
 			</ul>
-			For example, the string for a memo field that contains a customer address would be:<br>
+			For example, the string for a memo field that contains a customer address would be:
+			<br><br>
+			<code>
 			“{ \”street\” : \“1234 Main St\”, \”city\” : \“Palo Alto\”, \”country\” : \“US\”, \”state\” : \“CA\”, \”zip\” : \“94301\”}”
+			</code>
 			</td>
 		</tr>
 		<tr>
