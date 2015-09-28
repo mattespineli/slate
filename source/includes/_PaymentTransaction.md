@@ -351,6 +351,73 @@ EXAMPLE SERVICE REQUEST
 			<code>memo</code> and <code>memo1</code>-<code>memo40</code> are available for use as custom fields. These custom fields are viewable, searchable, sortable, and can be labelled using the IdentityMind UI.<br><br>For example, you can send SKU through <code>memo1</code>, Quantity through <code>memo2</code>, and Region through <code>memo3</code>.
 			</td>
 		</tr>
+		<tr>
+			<td>orderitems<br><font color=#446CB3>List[ItemDetails]</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Order details</td>
+		</tr>
+		<tr>
+			<th colspan=2>Item Details</th>
+		</tr>
+		<tr>
+			<td>sku<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item SKU</td>
+		</tr>
+		<tr>
+			<td>description<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item description</td>
+		</tr>
+		<tr>
+			<td>price<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item price</td>
+		</tr>
+		<tr>
+			<td>quantity<br><font color=#446CB3>integer</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item quantity</td>
+		</tr>
+		<tr>
+			<td>category<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item category</td>
+		</tr>
+		<tr>
+			<td>categoryID<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item category ID</td>
+		</tr>
+		<tr>
+			<td>itemTaxAmount<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item tax amount</td>
+		</tr>
+		<tr>
+			<td>store<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item store</td>
+		</tr>
+		<tr>
+			<td>storeID<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item store ID</td>
+		</tr>
+		<tr>
+			<td>department<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item department</td>
+		</tr>
+		<tr>
+			<td>departmentID<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item department ID</td>
+		</tr>
+		<tr>
+			<td>subcategory<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item subcategory</td>
+		</tr>
+		<tr>
+			<td>subcategoryID<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item subcategory ID</td>
+		</tr>
+		<tr>
+			<td>bendorName<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Vendor name</td>
+		</tr>
+		<tr>
+			<td>itemShippingChargesAmount<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item shipping charge amount</td>
+		</tr>
 	</table>
 
 <aside class="notice">The clear text credit card number is never sent to IdentityMind. Instead, IdentityMind uses a cryptographically secure hash to have a unique representation of each credit card. IdentityMind provides the required utilities to generate these hashes.</aside>
