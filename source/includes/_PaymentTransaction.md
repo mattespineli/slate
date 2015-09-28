@@ -376,7 +376,7 @@ EXAMPLE SERVICE REQUEST
 				<li>zip</li>
 			</ul>
 			For example, the string for a memo field that contains a customer address would be:
-			<br><br>
+			<br>
 			<code>
 			“{ \”street\” : \“1234 Main St\”, \”city\” : \“Palo Alto\”, \”country\” : \“US\”, \”state\” : \“CA\”, \”zip\” : \“94301\”}”
 			</code>
