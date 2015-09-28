@@ -347,8 +347,27 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>memo<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Free-form memo field for client use.<br><br>
-			<code>memo</code> and <code>memo1</code>-<code>memo40</code> are available for use as custom fields. These custom fields are viewable, searchable, sortable, and can be labelled using the IdentityMind UI.<br><br>For example, you can send SKU through <code>memo1</code>, Quantity through <code>memo2</code>, and Region through <code>memo3</code>.
+			<td>Free-form memo field for client use.
+			<br><br>
+			<code>memo</code> and <code>memo1</code>-<code>memo40</code> are available for use as custom fields. These custom fields are viewable, searchable, sortable, and can be labelled using the IdentityMind UI.
+			<br><br>
+			For example, you can send SKU through <code>memo1</code>, Quantity through <code>memo2</code>, and Region through <code>memo3</code>.
+			<br><br>
+			Memo fields are always sent as a string in the API. eDNA can convert the string into a simple type (date, iteger), or complex time (Address). For complex types, the string is a JSON encoding of the complex time. You can map the memo field from a string type to another types through the IdentityMind UI under Admin>Merchant Preferences>Custom Field Labels UI.
+			<br><br>
+			Supported simple types: integer, double, date, boolean
+			<br><br>
+			Supported complex type: Address
+			<ul>
+				<li>street</li>
+				<li>city</li>
+				<li>county</li>
+				<li>country</li>
+				<li>state</li>
+				<li>zip</li>
+			</ul>
+			For example, the string for a memo field that contains a customer address would be:<br>
+			“{ \”street\” : \“1234 Main St\”, \”city\” : \“Palo Alto\”, \”country\” : \“US\”, \”state\” : \“CA\”, \”zip\” : \“94301\”}”
 			</td>
 		</tr>
 		<tr>
