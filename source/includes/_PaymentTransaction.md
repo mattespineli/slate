@@ -411,7 +411,7 @@ EXAMPLE SERVICE REQUEST
 			<td>Item subcategory ID</td>
 		</tr>
 		<tr>
-			<td>bendorName<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>vendorName<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>Vendor name</td>
 		</tr>
 		<tr>
