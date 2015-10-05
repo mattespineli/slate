@@ -8,6 +8,9 @@ Request payment transaction anti-fraud evaluation:<br>
 Retrieve the current state of a transaction:<br>
 `GET https://edna.identitymind.com/im/transaction/<transaction_id>`
 
+Retrieve the current state of a transaction using Reseller credentials:<br>
+`GET https://edna.identitymind.com/im/transaction/<merchantName>/<transaction_id>` 
+
 <aside class="notice">Not all fields are required, but anti-fraud evaluation is more comprehensive when richer evidence is provided.</aside>
 
 ##### Arguments
@@ -274,7 +277,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>bs<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) state<br><br>Maximum length is 30 characters</td>
+			<td>Billing (source) state. Use official postal state/region abbreviations whenever possible (e.g. CA for California). <br><br>Maximum length is 30 characters</td>
 		</tr>
 		<tr>
 			<td>sfn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -302,7 +305,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>ss<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) state<br><br>Maximum length is 30 characters</td>
+			<td>Shipping (destination) state. Use official postal state/region abbreviations whenever possible (e.g. CA for California). <br><br>Maximum length is 30 characters</td>
 		</tr>
 		<tr>
 			<td>aflid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>

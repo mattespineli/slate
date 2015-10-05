@@ -50,7 +50,7 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>as<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The business' state</td>
+			<td>The business' state. Use official postal state/region abbreviations whenever possible (e.g. CA for California). </td>
 		</tr>
 		<tr>
 			<td>az<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -270,7 +270,7 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>bs<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) state<br><br>Maximum length is 30 characters</</td>
+			<td>Billing (source) state. Use official postal state/region abbreviations whenever possible (e.g. CA for California). <br><br>Maximum length is 30 characters</</td>
 		</tr>
 		<tr>
 			<td>sfn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -298,7 +298,7 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>ss<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) state<br><br>Maximum length is 30 characters</td>
+			<td>Shipping (destination) state. Use official postal state/region abbreviations whenever possible (e.g. CA for California). <br><br>Maximum length is 30 characters</td>
 		</tr>
 		<tr>
 			<td>aflid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
