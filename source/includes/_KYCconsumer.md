@@ -720,7 +720,7 @@ EXAMPLE SERVICE REQUEST
    "file":"pic.png"
 }
 ```
-<aside class="notice">Document upload data must be encoded as multipart/form-data, not JSON.</aside>
+<aside class="notice">Document upload data must be encoded as multipart/form-data, in the POST request.</aside>
 
 <table>
 		<tr>
