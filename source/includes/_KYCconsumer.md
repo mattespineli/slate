@@ -717,9 +717,10 @@ EXAMPLE SERVICE REQUEST
 ```json
 {
    "appId":"424284",
-   "file":"pic.ping"
+   "file":"pic.png"
 }
 ```
+<aside class="notice">Document upload data must be encoded as multipart/form-data, not JSON.</aside>
 
 <table>
 		<tr>
