@@ -708,6 +708,7 @@ Retrieve a list of files associated with the transaction:<br>
 Download a file associated with the transaction:<br>
 `GET https://edna.identitymind.com/im/account/consumer/<transaction_id>/files/<file_id>`
 
+<aside class="notice">Document upload data must be encoded as multipart/form-data in the POST request.</aside>
 
 ##### Arguments
 
@@ -720,7 +721,6 @@ EXAMPLE SERVICE REQUEST
    "file":"pic.png"
 }
 ```
-<aside class="notice">Document upload data must be encoded as multipart/form-data, in the POST request.</aside>
 
 <table>
 		<tr>
