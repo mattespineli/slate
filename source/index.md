@@ -6,7 +6,7 @@ language_tabs:
 
 toc_footers:
   - <a href='http://www.identitymindglobal.com/'>IdentityMind Global Home</a>
-  - eDNA API Reference Beta v1.1.6
+  - eDNA API Reference Beta v1.1.7
 
 includes:	
   - PaymentTransaction
@@ -37,5 +37,7 @@ IdentityMind uses an SSL Server certificate for the client to authenticate the s
 #### Testing in Different Environments
 
 To test using different environments, replace `https://edna.identitymind.com` with the relevant URL. For example, to send a Payment Transaction to the Sandbox environment, use `https://sandbox.identitymind.com/im/transaction`, or to send a transaction to Staging, use `https://staging.identitymind.com/im/transaction`.
+
+<aside class="warning">Clear text credit card numbers should <b>never</b> be sent to IdentityMind. Instead, IdentityMind uses a cryptographically secure hash to have a unique representation of each credit card. IdentityMind provides the required utilities to generate these hashes. See <a href="#payment-instrument-hashing">Payment Instrument Hashing</a> for more details.</aside>
 
 <link rel="icon" href="http://www.identitymindglobal.com/wp-content/uploads/2013/05/Favicon.png" type="image/png">

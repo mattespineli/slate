@@ -11,7 +11,7 @@ Retrieve the current state of a transaction:<br>
 Retrieve the current state of a transaction using Reseller credentials:<br>
 `GET https://edna.identitymind.com/im/transaction/<merchantName>/<transaction_id>` 
 
-<aside class="notice">Not all fields are required, but anti-fraud evaluation is more comprehensive when richer evidence is provided.</aside>
+<aside class="notice">Not all fields are required, but transaction evaluation is more comprehensive when richer evidence is provided. For some third party tests, certain fields may be required. For a list of the required fields, see <a href="#third-party-requirements">Third Party Requirements</a>.</aside>
 
 ##### Arguments
 
@@ -453,8 +453,6 @@ EXAMPLE SERVICE REQUEST
 			<td>Item shipping charge amount</td>
 		</tr>
 	</table>
-
-<aside class="notice">The clear text credit card number is never sent to IdentityMind. Instead, IdentityMind uses a cryptographically secure hash to have a unique representation of each credit card. IdentityMind provides the required utilities to generate these hashes.</aside>
 
 ##### Response
 

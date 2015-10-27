@@ -5,7 +5,7 @@ Record a login for the provided entities.
 Annotate a user's transactions with login data:  
 `POST https://edna.identitymind.com/im/account/login`
 
-<aside class="notice">Not all fields are required, but anti-fraud evaluation is more comprehensive when richer evidence is provided.</aside>
+<aside class="notice">Not all fields are required, but transaction evaluation is more comprehensive when richer evidence is provided. For some third party tests, certain fields may be required. For a list of the required fields, see <a href="#third-party-requirements">Third Party Requirements</a>.</aside>
 
 ##### Arguments
 

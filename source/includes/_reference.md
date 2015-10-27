@@ -1,5 +1,16 @@
 # Reference
 
+## Third Party Requirements
+
+Some third party tests require certain API fields to be provided in order to run successfully.<br>
+
+Third Party Provider | Required Fields
+---------------------|----------------
+IDAnalytics CertainID | `bsn`
+IDAnalytics IDScore | At least four of the following:<br>`bfn` `bln` `bz` `bc` `bs` `bsn`
+Idology ExpectID | `bsn` `bfn` `bln` `bz` <br>OR<br>`bsn` `bc` `bs`
+Idology ExpectID PA | `bfn` `bln`
+
 ## HTTP Error Codes
 
 Code | Meaning
@@ -337,6 +348,14 @@ ed:512|  28 Day IP Transaction Velocity
 ed:513|  28 Day Account Creation Velocity
 ed:514|  28 Day IP Account Creation Velocity
 ed:515|  24 Hour Shipping Address Velocity
+ed:516|  1 Hour Source Account Limit
+ed:517|  24 Hour Source Account Limit
+ed:518|  7 Day Source Account Limit
+ed:519|  28 Day Source Account Limit
+ed:520|  1 Hour Destination Account Transfer In Limit
+ed:521|  24 Hour Destination Account Transfer In Limit
+ed:522|  7 Day Destination Account Transfer In Limit
+ed:523|  28 Day Destination Account Transfer In Limit
 bs:0| IDM Business Risk
 bs:2| IDM Business Risk: Business Match Score
 bs:3| IDM Business Risk: Matched DBA
