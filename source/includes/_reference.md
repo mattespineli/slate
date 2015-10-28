@@ -6,10 +6,40 @@ Some third party tests require certain API fields to be provided in order to run
 
 Third Party Provider | Required Fields
 ---------------------|----------------
-IDAnalytics CertainID | `bsn`
-IDAnalytics IDScore | At least four of the following:<br>`bfn` `bln` `bz` `bc` `bs` `bsn`
-Idology ExpectID | `bsn` `bfn` `bln` `bz` <br>OR<br>`bsn` `bc` `bs`
-Idology ExpectID PA | `bfn` `bln`
+Augur                | `dfp` `dft`
+Experian ProveID     | At least one of the following:<br> `bc` `bsn` `bz`
+IDAnalytics CertainID| `bc` `bfn` `bln` `bs` `bsn` `bz`
+IDAnalytics IDScore  | At least four of the following:<br>`bc` `bfn` `bln` `bs` `bsn` `bz`
+Idology ExpectID     | `bfn` `bln` `bs` `bsn` and at least one of the following:<br> `bc` `bz`
+IDM Business Risk    | `bc` `bco` `bfn` `bln` `bs` `bsn` `bz`
+Idology ExpectID PA  | `bfn` `bln`
+MaxMind              | `ip`
+NeuStar CQR          | `bco` and at least one of the following:<br> `bc` `bfn` `bln` `bs` `bsn` `bz` `ph` `phn` `pm`
+NeuStar Email Confidence| `bco`
+Phone Ownership Validation| At least one of the following:<br> `ph` `phn` `pm`
+RapLeaf              | `tea`
+Sanctions Screening  | `bfn` `bln`
+TIN Verification     | `assn`
+Telesign             | At least one of the following:<br> `ph` `phn` `pm`
+
+## Sample Callbacks
+#### Jumio
+##### Embedded NetVerify / NetVerify Redriect / performNetverify
+Approved and verified (URL-encoded POST):<br>
+`idExpiry=2022-12-31&idType=PASSPORT&idDob=1990-01-01&idCheckSignature=OK&idCheckDataPositions=OK&idCheckHologram=OK&idCheckMicroprint=OK&idCheckDocumentValidation=OK&idCountry=USA&idScanSource=WEB_UPLOAD&idFirstName=FIRSTNAME&verificationStatus=APPROVED_VERIFIED&jumioIdScanReference=xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxxxxxx&personalNumber=N%2FA&merchantIdScanReference=YOURSCANREFERENCE&idCheckSecurityFeatures=OKidCheckMRZcode=OKidScanImage=https%3A%2F%2Fnetverify.com%2Frecognition%2Fv1%2Fidscan%2Fxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx%2Ffront&callBackType=NETVERIFYIDclientIp=xxx.xxx.xxx.xxx&idLastName=LASTNAME&idAddress=%7B%22country%22%3A%22USA%22%2C%22stateCode%22%3A%22US%2DOH%22%7D&idScanStatus=SUCCESS&idNumber=P1234`<br><br>
+Fraud (URL-encoded POST):<br>
+`idType=PASSPORT&idCheckSignature=N%2FA&rejectReason=%7B%20%22rejectReasonCode%22%3A%22100%22%2C%20%22rejectReasonDescription%22%3A%22MANIPULATED_DOCUMENT%22%2C%20%22rejectReasonDetails%22%3A%20%5B%7B%20%22detailsCode%22%3A%20%221001%22%2C%20%22detailsDescription%22%3A%20%22PHOTO%22%20%7D%2C%7B%20%22detailsCode%22%3A%20%221004%22%2C%20%22detailsDescription%22%3A%20%22DOB%22%20%7D%5D%7D&idCheckDataPositions=N%2FA&idCheckHologram=N%2FA&idCheckMicroprint=N%2FA&idCheckDocumentValidation=N%2FA&idCountry=USA&idScanSource=WEB_UPLOAD&verificationStatus=DENIED_FRAUD&jumioIdScanReference=xxxxxxxx-xxxx-xxxx-xxxx-37 xxxxxxxxxxxx&merchantIdScanReference=YOURSCANREFERENCE&idCheckSecurityFeatures=N%2FA&idCheckMRZcode=N%2FA&idScanImage=https%3A%2F%2Fnetverify.com%2Frecognition%2Fv1%2Fidscan%2Fxxxxxxxx-xxxx-xxxx-xxxxxxxxxxxxxxxx%2Ffront&callBackType=NETVERIFYID&clientIp=xxx.xxx.xxx.xxx&idScanStatus=ERROR`
+##### NetVerify Multi Document
+Document present (URL-encoded POST):<br>
+`jumioScanReference=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&documentType=CC&merchantScanReference=YOURSCANREFERENCE&documentPageImageUrls=%5Bhttps%3A%2F%2Fnetverify.com%2Frecognition%2Fv1%2Fdocuments%2Fxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx%2Fimages%2F512ccacce4b08a828bd46ec8%2C+https%3A%2F%2Fnetverify.com%2Frecognition%2Fv1%2Fdocuments%xxxxxxxx-xxxx-xxxxxxxx-xxxxxxxxxxxx%2Fimages%2F512ccacce4b08a828bd46ecd%5D&callBackType=DOCUMENT&customerID=CUSTOMERID&documentStatus=DOCUMENT_PRESENT`<br><br>
+No document present (URL-encoded POST):<br>
+`jumioScanReference=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&documentType=CC&merchantScanReference=YOURSCANREFERENCE&callBackType=DOCUMENT&customerID=CUSTOMERID&documentStatus=NO_DOCUMENT_PRESENT`<br><br>
+Denied unsupported document type (URL-encoded POST):<br>
+`jumioScanReference=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&documentType=CC&merchantScanReference=YOURSCANREFERENCE&callBackType=DOCUMENT&customerID=CUSTOMERID&documentStatus=DENIED_UNSUPPORTED_DOCUMENT_TYPE`
+#### Phone Ownership Verification
+Text text text text
+#### Application Updates
+Text text text text
 
 ## HTTP Error Codes
 
@@ -382,6 +412,11 @@ mh:0|	MATCH
 mh:1|	MATCH: Terminated Merchant
 mh:2|	MATCH: Terminated Merchant for Fraudulent Reason
 au:0|   Augur: Using Tor Browser
+au:1|   Augur
+au:2|   Augur: Is Mobile
+au:3|   Augur: Is Bot
+au:4|   Augur: Device Type
+au:5|   Augur: Language
 bc:0|	BlueCava 
 bc:1|	BlueCava: Using Anonymous Proxy
 bc:2|	BlueCava: Has Used Anonymous Proxy
@@ -632,13 +667,13 @@ The bank account number token should be included in the JSON string of the reque
 ## Change History
 
 #### 1.20
-- Added support for custom fields. See <code>memo</code> field in API document for more information.
+- Added support for custom fields. See `memo` field in API document for more information.
 - Added IDM Business Risk security tests
 
 #### 1.19
 - Added 1.18 backwards compatibility mode (rule number and name changes still relevant)
 - Scorecard now included in transaction and transfer results
-- smid replaced by profile field
+- `smid` replaced by `profile` field
 - Removed some unused fields
 - Simplified TestResult encoding
 - Changed KYC response so that it is consistent with other transaction types
