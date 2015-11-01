@@ -15,31 +15,114 @@ IDM Business Risk    | `bc` `bco` `bfn` `bln` `bs` `bsn` `bz`
 Idology ExpectID PA  | `bfn` `bln`
 MaxMind              | `ip`
 NeuStar CQR          | `bco` and at least one of the following:<br> `bc` `bfn` `bln` `bs` `bsn` `bz` `ph` `phn` `pm`
-NeuStar Email Confidence| `bco`
+NeuStar Email Confidence| `bco` `tea`
 Phone Ownership Validation| At least one of the following:<br> `ph` `phn` `pm`
 RapLeaf              | `tea`
 Sanctions Screening  | `bfn` `bln`
-TIN Verification     | `assn`
+TIN Verification     | `assn` `ataxid`
 Telesign             | At least one of the following:<br> `ph` `phn` `pm`
 
 ## Sample Callbacks
-#### Jumio
-##### Embedded NetVerify / NetVerify Redriect / performNetverify
-Approved and verified (URL-encoded POST):<br>
-`idExpiry=2022-12-31&idType=PASSPORT&idDob=1990-01-01&idCheckSignature=OK&idCheckDataPositions=OK&idCheckHologram=OK&idCheckMicroprint=OK&idCheckDocumentValidation=OK&idCountry=USA&idScanSource=WEB_UPLOAD&idFirstName=FIRSTNAME&verificationStatus=APPROVED_VERIFIED&jumioIdScanReference=xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxxxxxx&personalNumber=N%2FA&merchantIdScanReference=YOURSCANREFERENCE&idCheckSecurityFeatures=OKidCheckMRZcode=OKidScanImage=https%3A%2F%2Fnetverify.com%2Frecognition%2Fv1%2Fidscan%2Fxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx%2Ffront&callBackType=NETVERIFYIDclientIp=xxx.xxx.xxx.xxx&idLastName=LASTNAME&idAddress=%7B%22country%22%3A%22USA%22%2C%22stateCode%22%3A%22US%2DOH%22%7D&idScanStatus=SUCCESS&idNumber=P1234`<br><br>
-Fraud (URL-encoded POST):<br>
-`idType=PASSPORT&idCheckSignature=N%2FA&rejectReason=%7B%20%22rejectReasonCode%22%3A%22100%22%2C%20%22rejectReasonDescription%22%3A%22MANIPULATED_DOCUMENT%22%2C%20%22rejectReasonDetails%22%3A%20%5B%7B%20%22detailsCode%22%3A%20%221001%22%2C%20%22detailsDescription%22%3A%20%22PHOTO%22%20%7D%2C%7B%20%22detailsCode%22%3A%20%221004%22%2C%20%22detailsDescription%22%3A%20%22DOB%22%20%7D%5D%7D&idCheckDataPositions=N%2FA&idCheckHologram=N%2FA&idCheckMicroprint=N%2FA&idCheckDocumentValidation=N%2FA&idCountry=USA&idScanSource=WEB_UPLOAD&verificationStatus=DENIED_FRAUD&jumioIdScanReference=xxxxxxxx-xxxx-xxxx-xxxx-37 xxxxxxxxxxxx&merchantIdScanReference=YOURSCANREFERENCE&idCheckSecurityFeatures=N%2FA&idCheckMRZcode=N%2FA&idScanImage=https%3A%2F%2Fnetverify.com%2Frecognition%2Fv1%2Fidscan%2Fxxxxxxxx-xxxx-xxxx-xxxxxxxxxxxxxxxx%2Ffront&callBackType=NETVERIFYID&clientIp=xxx.xxx.xxx.xxx&idScanStatus=ERROR`
-##### NetVerify Multi Document
-Document present (URL-encoded POST):<br>
-`jumioScanReference=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&documentType=CC&merchantScanReference=YOURSCANREFERENCE&documentPageImageUrls=%5Bhttps%3A%2F%2Fnetverify.com%2Frecognition%2Fv1%2Fdocuments%2Fxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx%2Fimages%2F512ccacce4b08a828bd46ec8%2C+https%3A%2F%2Fnetverify.com%2Frecognition%2Fv1%2Fdocuments%xxxxxxxx-xxxx-xxxxxxxx-xxxxxxxxxxxx%2Fimages%2F512ccacce4b08a828bd46ecd%5D&callBackType=DOCUMENT&customerID=CUSTOMERID&documentStatus=DOCUMENT_PRESENT`<br><br>
-No document present (URL-encoded POST):<br>
-`jumioScanReference=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&documentType=CC&merchantScanReference=YOURSCANREFERENCE&callBackType=DOCUMENT&customerID=CUSTOMERID&documentStatus=NO_DOCUMENT_PRESENT`<br><br>
-Denied unsupported document type (URL-encoded POST):<br>
-`jumioScanReference=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&documentType=CC&merchantScanReference=YOURSCANREFERENCE&callBackType=DOCUMENT&customerID=CUSTOMERID&documentStatus=DENIED_UNSUPPORTED_DOCUMENT_TYPE`
+#### Jumio NetVerify
+Contact <a href="mailto:identitymind@zohosupport.com">IdentityMind Support</a> for more information about IdentityMind/Jumio integration.<br><br>
+Jumio callbacks are included with the KYC response if Jumio security tests have been enabled. Note the `docVerification` and `redirectURL` attributes included in the response.
+<br><br>
+<code style=display:block>
+{
+  "user": "UNKNOWN",
+  "upr": "UNKNOWN",
+  "ednaScoreCard": {
+    "sc": [
+      {
+        "test": "ed:1",
+        "details": "true"
+      }
+    ],
+    "etr": [
+      {
+        "test": "ed:31",
+        "details": "true"
+      },
+      {
+        "test": "ed:2",
+        "details": "true"
+      },
+      {
+        "test": "ed:1",
+        "details": "true"
+      },
+      {
+        "test": "ed:28",
+        "details": "true"
+      },
+      {
+        "test": "nv:2"
+      },
+      {
+        "test": "nv:2",
+        "waitingForData": false
+      },
+      {
+        "test": "ed:20",
+        "details": "true"
+      },
+      {
+        "test": "nv:0",
+        "details": "true"
+      },
+      {
+        "test": "nv:0",
+        "details": "true"
+      },
+      {
+        "test": "nv:1"
+      },
+      {
+        "test": "nv:1",
+        "waitingForData": false
+      }
+    ],
+    "er": {
+      "profile": "DEFAULT",
+      "reportedRule": {
+        "description": "Fallthrough for transaction with an unknown entity. No other rules triggered.",
+        "ruleId": 1002,
+        "testResults": [
+          {
+            "test": "ed:1",
+            "fired": true,
+            "details": "[Fired] details",
+            "ts": 1446077454000,
+            "stage": "1"
+          }
+        ],
+        "resultCode": "ACCEPT",
+        "details": "[Fired] details",
+        "name": "Unknown Fallthrough"
+      }
+    }
+  },
+  "frn": "Unknown Fallthrough",
+  "frp": "ACCEPT",
+  "frd": "Fallthrough for transaction with an unknown entity. No other rules triggered.",
+  "mtid": "2274071",
+  "state": "R",
+  "docVerification": {
+    "redirectURL": "https://netverify.com/widget/jumio-verify/2.0/form?authorizationToken=f9d32f46-8f11-4b7c-b146-6d7a95aa765f"
+  },
+  "tid": "2274071",
+  "erd": "Unknown User",
+  "res": "ACCEPT",
+  "rcd": "1002,101,202,131,50005,150"
+}
+</code><br>
 #### Phone Ownership Verification
-Text text text text
-#### Application Updates
-Text text text text
+<code style=display:block>{
+    "smsCode": "0000"
+}
+</code>
+#### KYC Application Updates
+Updates to KYC applications follow the same model as a KYC response, with the updated security test results.
 
 ## HTTP Error Codes
 
@@ -569,15 +652,15 @@ If you use other languages, please see "Credit Card Number Hash".</aside>
 
 ##### Credit Card Number Hash
 
-To generate the credit card number hash, you use the salt provided by IdentityMind, to generate a SHA-1 hash for the non-masked credit card number, and convert the byte array of the hash to Hexadecimal string. The hash should be included in the JSON string of the request in the field pccn. 
+To generate the credit card number hash, you use the salt provided by IdentityMind, to generate a SHA-1 hash for the non-masked credit card number, and convert the byte array of the hash to Hexadecimal string. The hash should be included in the JSON string of the request in the field `pccn`. 
 
-Say you have a function sha1(String s) that takes a string s and return the sha1 hash of the string in hex, you would concatenate the salt and the credit card number and pass that to the function to get credit card number hash.   Note that all non-numeric characters should be removed from the card number prior to hashing.
+If you have a function sha1(String s) that takes a string s and return the sha1 hash of the string in hex, you would concatenate the salt and the credit card number and pass that to the function to get credit card number hash. All non-numeric characters should be removed from the card number prior to hashing.
 
-Please contact IdentityMind to get the salt. 
+Please contact <a href="mailto:identitymind@zohosupport.com">IdentityMind Support</a>  to get the salt. 
 
 For example, the salted credit card number hash for 4012012301230123 is 32c1950468af7489efb48c911f9550092ebf34c5
 
-The credit card number hash should be included in the JSON string of the request to IdentityMind Transaction API in the field "pccn". 
+The credit card number hash should be included in the JSON string of the request to IdentityMind Transaction API in the field `pccn`. 
 
 <aside class="notice">The hash must be of the full card number, not a masked or tokenized representation.</aside>
 
@@ -586,7 +669,7 @@ The credit card number hash should be included in the JSON string of the request
 
 The credit card number token is the first 6 digits of the actual card number followed by XXXXXX followed by the last 4 digits of the actual card number. For example, the credit card number token for card number 4012012301230123 is 401201XXXXXX0123. 
 
-The credit card number token should be included in the JSON string of the request to IdentityMind Transaction API in the field "pcct". 
+The credit card number token should be included in the JSON string of the request to IdentityMind Transaction API in the field `pcct`. 
 
 
 #### Including Bank Account Hash and Token in Transaction Request
@@ -638,27 +721,27 @@ If you use other languages, please see "Bank Account Number Hash" below.
 
 ##### Bank Account Number Hash
 
-To generate the bank account number hash, you use the salt provided by IdentityMind, to generate a SHA-1 hash for the non masked account number, and convert the byte array of the hash to Hexadecimal string. The hash should be included in the JSON string of the request in the field "pach".
+To generate the bank account number hash, you use the salt provided by IdentityMind, to generate a SHA-1 hash for the non-masked account number, and convert the byte array of the hash to Hexadecimal string. The hash should be included in the JSON string of the request in the field `pach`.
 
-Say you have a function sha1(String s) that takes a string s and return the sha1 hash of the string in hex:
+If you have a function sha1(String s) that takes a string s and return the sha1 hash of the string in hex:
 
-- for a US bank account number concatenate the salt and the routing number and account number and pass that to the function to get account number hash
-- for an international IBAN account number concatenate the salt and full IBAN account number and pass that to the function to get account number hash
+- For a US bank account number concatenate the salt and the routing number and account number and pass that to the function to get account number hash
+- For an international IBAN account number concatenate the salt and full IBAN account number and pass that to the function to get account number hash
 
 <aside class="notice">All spaces and dashes should be removed from the account number prior to hashing.</aside>
 
-Please contact IdentityMind to get the salt. 
+Please contact <a href="mailto:identitymind@zohosupport.com">IdentityMind Support</a>  to get the salt. 
 
 For example, the salted bank account number hash for 321076479 74600015199010 is 3f57733f34b677294fed96efd440b8d9e7728fa5 and the hash for SN12K00100152000025690007542 is dd91898995dfef188eca122c5e0dd92f3aa34550
 
-The account number hash should be included in the JSON string of the request to IdentityMind Transaction API in the field "pach."
+The account number hash should be included in the JSON string of the request to IdentityMind Transaction API in the field `pach`.
 
 
 ##### Bank Account Number Token
 
 For the bank account number token we recommend: 
-- for a US bank account number the first 6 digits of the routing number, followed by XXXXXXXX and the last 4 digits of the account number
-- for an international IBAN account number the first 6 digits of the account, followed by XXXXXXXX and the last 4 digits of the account number
+- For a US bank account number, the first 6 digits of the routing number, followed by XXXXXXXX and the last 4 digits of the account number
+- For an international, IBAN account number the first 6 digits of the account, followed by XXXXXXXX and the last 4 digits of the account number
 
 For example, the token for 321076479 74600015199010 is 321076XXXXXXXX9010 and the hash for SN12K00100152000025690007542 is SN12K0XXXXXXXX7542
 
