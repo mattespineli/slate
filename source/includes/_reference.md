@@ -445,6 +445,12 @@ ed:92|  PayPal Count for User
 ed:93|  User's Age
 ed:94|  PayPal Count for Device
 ed:95|  Consumer Application Count for User
+ed:98|  SKU Blacklist
+ed:99|  Subcategory Blacklist
+ed:100|  SKU Watchlist
+ed:101|  Subcategory Watchlist
+ed:102|  BIN Blacklist
+ed:103|  BIN Watchlist
 ed:500|  1 Hour Source Transaction Velocity
 ed:501|  1 Hour Destination Transaction Velocity
 ed:502|  1 Hour IP Transaction Velocity
