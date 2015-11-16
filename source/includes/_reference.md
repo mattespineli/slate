@@ -19,7 +19,7 @@ NeuStar Email Confidence| `bco` `tea`
 Phone Ownership Validation| At least one of the following:<br> `ph` `phn` `pm`
 RapLeaf              | `tea`
 Sanctions Screening  | `bfn` `bln`
-TIN Verification     | `assn` `ataxid`
+TIN Verification     | At least one of the following:<br> `assn` `ataxid`
 Telesign             | At least one of the following:<br> `ph` `phn` `pm`
 
 ## Sample Callbacks

@@ -452,6 +452,22 @@ EXAMPLE SERVICE REQUEST
 			<td>itemShippingChargesAmount<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>Item shipping charge amount</td>
 		</tr>
+		<tr>
+			<td>itemShippingMethod<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item shipping method</td>
+		</tr>
+		<tr>
+			<td>itemHolidayIconFlag<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item holiday special flag</td>
+		</tr>
+		<tr>
+			<td>itemTwentyFourHourIconFlag<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>24 hour shipping item</td>
+		</tr>
+		<tr>
+			<td>itemHotProduct<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>Item is a fraud target</td>
+		</tr>
 	</table>
 
 ##### Response
