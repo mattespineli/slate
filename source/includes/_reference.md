@@ -445,6 +445,8 @@ ed:92|  PayPal Count for User
 ed:93|  User's Age
 ed:94|  PayPal Count for Device
 ed:95|  Consumer Application Count for User
+edL96|  Card Cound for Billing Address
+ed:97|  eDNA Risk Score
 ed:98|  SKU Blacklist
 ed:99|  Subcategory Blacklist
 ed:100|  SKU Watchlist
