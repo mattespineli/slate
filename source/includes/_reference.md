@@ -2,7 +2,7 @@
 
 ## Third Party Requirements
 
-Some third party tests require certain API fields to be provided in order to run successfully.<br>
+Some third party tests require certain API fields to be provided in order to run successfully. As always, evaluation is more comprehensive when richer evidence is provided.<br>
 
 Third Party Provider | Required Fields
 ---------------------|----------------
@@ -10,7 +10,7 @@ Augur                | `dfp` `dft`
 Experian ProveID     | At least one of the following:<br> `bc` `bsn` `bz`
 IDAnalytics CertainID| `bc` `bfn` `bln` `bs` `bsn` `bz`
 IDAnalytics IDScore  | At least four of the following:<br>`bc` `bfn` `bln` `bs` `bsn` `bz`
-Idology ExpectID     | `bfn` `bln` `bs` `bsn` and at least one of the following:<br> `bc` `bz`
+Idology ExpectID     | `bfn` `bln` `bs` are required,<br>in addition to either `assn` AND `dob`, or `bsn`,<br>and at least one of the following:<br> `bc` `bz`
 IDM Business Risk    | `bc` `bco` `bfn` `bln` `bs` `bsn` `bz`
 Idology ExpectID PA  | `bfn` `bln`
 MaxMind              | `ip`
@@ -445,7 +445,7 @@ ed:92|  PayPal Count for User
 ed:93|  User's Age
 ed:94|  PayPal Count for Device
 ed:95|  Consumer Application Count for User
-edL96|  Card Cound for Billing Address
+ed:96|  Card Count for Billing Address
 ed:97|  eDNA Risk Score
 ed:98|  SKU Blacklist
 ed:99|  Subcategory Blacklist
