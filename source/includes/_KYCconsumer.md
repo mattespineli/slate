@@ -30,7 +30,7 @@ Retrieve the current state of a consumer application:<br>
 			<td>Applicant's social security number or national identification number<br><br>
 			Should follow the format <code>&lt;ISO-3166-1 alpha-2 country code&gt;:&lt;national id&gt;</code><br>
 			For example, <code>\"US:123456789\"</code> represents a United States Social Security number.<br>
-			If no country code is provided, it is assumed to be a United States Social Security number..</td>
+			If no country code is provided, it is assumed to be a United States Social Security number.</td>
 		</tr>
 		<tr>
 			<td>assnl4<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
