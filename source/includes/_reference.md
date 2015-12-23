@@ -757,6 +757,10 @@ The bank account number token should be included in the JSON string of the reque
 
 ## Change History
 
+#### 1.21
+- Added support for order details. See `orderItems` field in API document for more information.
+- Added security tests involving `orderItems` data.
+
 #### 1.20
 - Added support for custom fields. See `memo` field in API document for more information.
 - Added IDM Business Risk security tests

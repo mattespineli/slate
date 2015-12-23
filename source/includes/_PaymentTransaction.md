@@ -201,7 +201,15 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>dft<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Device fingerprint type</td>
+			<td>Device fingerprint type:
+            <ul>
+                <li><code>AU</code> - Augur</li>
+                <li><code>IO</code> - Iovation</li>
+                <li><code>CB</code> - ThreatMetrix</li>
+                <li><code>IA</code> - InAuth</li>
+            </ul>
+            Augur has full Security Test support, the other types are for device matching purposes only.
+            </td>
 		</tr>
 		<tr>
 			<td>tti<br><font color=#446CB3>Object</font><br><font color=#BDC3C7><i>optional</i></font></td>
