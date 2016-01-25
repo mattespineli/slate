@@ -59,7 +59,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes"ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
+			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes">ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>pppi<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -816,7 +816,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes"ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
+			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes">ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>error_code<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
@@ -1005,7 +1005,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes"ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
+			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes">ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>reason<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -1380,7 +1380,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes"ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
+			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes">ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>bank_status<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
