@@ -46,7 +46,7 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>aco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The business' country. ISO 3166-1 alpha-2 country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
+			<td>The business' country. <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
 		</tr>
 		<tr>
 			<td>as<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -165,7 +165,7 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>dob<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Applicant's date of birth encoded as an ISO 8601 string</td>
+			<td>Applicant's date of birth encoded as an <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> string (YYYY-MM-DD)</td>
 		</tr>
 		<tr>
 			<td>m<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -209,7 +209,7 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>tti<br><font color=#446CB3>Object</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Transaction time in UTC. Encoded as a Unix timestamp or ISO 8601 string. Data containing milliseconds will not be accepted.</td>
+			<td>Transaction time in UTC. Encoded as a Unix timestamp or I<a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> string. Data containing milliseconds will not be accepted.</td>
 		</tr>
 		<tr>
 			<td>bfn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -269,7 +269,7 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>bco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) country. ISO 3166-1 alpha-2 country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
+			<td>Billing (source) country. <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
 		</tr>
 		<tr>
 			<td>bz<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -297,7 +297,7 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>sco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) country. ISO 3166-1 alpha-2 country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
+			<td>Shipping (destination) country. <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
 		</tr>
 		<tr>
 			<td>sz<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -317,11 +317,11 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>aflsd<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The signup/affiliate creation date of the affiliate associated with this transaction. Either an ISO 8601 encoded string or a Unix timestamp.</td>
+			<td>The signup/affiliate creation date of the affiliate associated with this transaction. Either an <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> encoded string or a Unix timestamp.</td>
 		</tr>
 		<tr>
 			<td>blg<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Customer browser language. Values are defined in ISO 639-1.</td>
+			<td>Customer browser language. Values are defined in <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a>.</td>
 		</tr>
 		<tr>
 			<td>clat<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>

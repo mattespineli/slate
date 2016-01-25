@@ -59,7 +59,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>ISO 4217 currency code<br><br>Maximum length is 3 characters</td>
+			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes"ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>pppi<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -213,7 +213,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>tti<br><font color=#446CB3>Object</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Transaction time in UTC. Encoded as a Unix timestamp or ISO 8601 string. Data containing milliseconds will not be accepted.</td>
+			<td>Transaction time in UTC. Encoded as a Unix timestamp or <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> string. Data containing milliseconds will not be accepted.</td>
 		</tr>
 		<tr>
 			<td>bfn<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -273,7 +273,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>bco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Billing (source) country. ISO 3166-1 alpha-2 country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
+			<td>Billing (source) country. <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
 		</tr>
 		<tr>
 			<td>bz<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -301,7 +301,7 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>sco<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Shipping (destination) country. ISO 3166-1 alpha-2 country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
+			<td>Shipping (destination) country. <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> country code of the billing address of the transaction. Default is <code>US</code>.<br><br>Maximum length is 2 characters</td>
 		</tr>
 		<tr>
 			<td>sz<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -321,11 +321,11 @@ EXAMPLE SERVICE REQUEST
 		</tr>
 		<tr>
 			<td>aflsd<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The signup/affiliate creation date of the affiliate associated with this transaction. Either an ISO 8601 encoded string or a Unix timestamp.</td>
+			<td>The signup/affiliate creation date of the affiliate associated with this transaction. Either an <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> encoded string or a Unix timestamp.</td>
 		</tr>
 		<tr>
 			<td>blg<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Customer browser language. Values are defined in ISO 639-1.</td>
+			<td>Customer browser language. Values are defined in <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a>.</td>
 		</tr>
 		<tr>
 			<td>clat<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -816,7 +816,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>ISO 4217 currency code<br><br>Maximum length is 3 characters</td>
+			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes"ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>error_code<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
@@ -840,7 +840,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>cbdate<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
-			<td>Date of the chargeback action. For example, if the cbtype is <code>CREDIT</code>, then the date field should be the date that the CREDIT happens. The format of the value for this field is either an ISO 8601 encoded string or a UNIX timestamp.
+			<td>Date of the chargeback action. For example, if the cbtype is <code>CREDIT</code>, then the date field should be the date that the CREDIT happens. The format of the value for this field is either an <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> encoded string or a UNIX timestamp.
 				<ul type="disc">
 					<li><code>"cbdate": "2011-01-01T13:12:16+0000"</code></li>
 					<li><code>"cbdate":1293887536</code></li>
@@ -850,7 +850,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>authdate<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Date of the original authorization transaction. The format of the value for this field is either an ISO 8601 encoded string or a UNIX timestamp.
+			<td>Date of the original authorization transaction. The format of the value for this field is either an <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> encoded string or a UNIX timestamp.
 				<ul type="disc">
 					<li><code>"authdate": "2011-01-01T13:12:16+0000"</code></li>
 					<li><code>"authdate":1293887536</code></li>
@@ -903,7 +903,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ric<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The issuer country of the card used in the transaction. The country code is the two letter abbreviation as defined in ISO-3166-1.</td>
+			<td>The issuer country of the card used in the transaction. The country code is the two letter abbreviation as defined in <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a>.</td>
 		</tr>
 		<tr>
 			<td>pcty<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -928,7 +928,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ric2<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The issuer country of the credit card to which the chargeback amount is to be credited if it is different from the credit card where the chargeback was reported. The country code is the two letter abbreviation as defined in ISO-3166-1.</td>
+			<td>The issuer country of the credit card to which the chargeback amount is to be credited if it is different from the credit card where the chargeback was reported. The country code is the two letter abbreviation as defined in <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a>.</td>
 		</tr>
 		<tr>
 			<td>pcty2<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -1005,7 +1005,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>ISO 4217 currency code<br><br>Maximum length is 3 characters</td>
+			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes"ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>reason<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -1013,7 +1013,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>crdate<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
-			<td>Date of the credit action. The format of the value for this field is either an ISO 8601 encoded string or a UNIX timestamp.
+			<td>Date of the credit action. The format of the value for this field is either an <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> encoded string or a UNIX timestamp.
 				<ul type="disc">
 					<li><code>"crdate": "2011-01-01T13:12:16+0000"</code></li>
 					<li><code>"crdate":1293887536</code></li>
@@ -1049,7 +1049,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ric<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>The issuer country of the card used in the transaction. The country code is the two letter abbreviation as defined in ISO-3166-1.</td>
+			<td>The issuer country of the card used in the transaction. The country code is the two letter abbreviation as defined in <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a>.</td>
 		</tr>
 		<tr>
 			<td>pcty<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -1380,7 +1380,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>ccy<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>ISO 4217 currency code<br><br>Maximum length is 3 characters</td>
+			<td><a href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes"ISO 4217<a/> currency code<br><br>Maximum length is 3 characters</td>
 		</tr>
 		<tr>
 			<td>bank_status<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
