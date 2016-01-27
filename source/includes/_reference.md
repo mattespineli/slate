@@ -453,6 +453,20 @@ ed:100|  SKU Watchlist
 ed:101|  Subcategory Watchlist
 ed:102|  BIN Blacklist
 ed:103|  BIN Watchlist
+ed:104|  Shipping Cost
+ed:105|  Shipping Cost Ratio
+ed:106|  Watchlist Subcategory Count
+ed:107|  Billing and Shipping Full Name Mistmatch
+ed:108|  Billing and Shipping Country Mismatch
+ed:109|  Age of Account
+ed:110|  User Count for Transaction Phone Number(s)
+ed:111|  Watchlist SKU Count
+ed:112|  Shipping State Blacklist
+ed:113|  Billing State Blacklist
+ed:114|  Account State Blacklist
+ed:115|  Account Country Blacklist
+ed:116|  Account Country Watchlist
+ed:117|  Account Country Accept Only List
 ed:500|  1 Hour Source Transaction Velocity
 ed:501|  1 Hour Destination Transaction Velocity
 ed:502|  1 Hour IP Transaction Velocity
