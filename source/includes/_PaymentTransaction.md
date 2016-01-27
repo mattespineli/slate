@@ -363,7 +363,19 @@ EXAMPLE SERVICE REQUEST
 			<code>memo</code> and <code>memo1</code>-<code>memo40</code> are available for use as custom fields. These custom fields are viewable, searchable, sortable, and can be labelled using the IdentityMind UI.
 			<br><br>
 			For example, you can send a Referral Code through <code>memo1</code>, Coupon Code through <code>memo2</code>, and Coupon Amount through <code>memo3</code>.
-			</td>
+			<br><br>
+			Memo fields are <b>always</b> sent as a string in the API. eDNA can convert the string into a simple type (date, integer), or complex type (Address). For complex types, the string is a JSON encoding of the complex type. You can map a memo field to another type through the IdentityMind UI under Admin > Merchant Preferences > Custom Field Labels UI.
+			<br><br>
+			Supported simple types:
+			<ul>
+                <li>string</li>
+				<li>integer</li> 
+				<li>date</li>
+				<li>decimal</li>
+				<li>big integer</li>
+			</ul>
+			</code>
+            </td>
 		</tr>
 		<tr>
 			<td>orderitems<br><font color=#446CB3>List[ItemDetails]</font><br><font color=#BDC3C7><i>optional</i></font></td>
