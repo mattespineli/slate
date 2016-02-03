@@ -17,7 +17,7 @@ MaxMind              | `ip`
 NeuStar CQR          | `bco` and at least one of the following:<br> `bc` `bfn` `bln` `bs` `bsn` `bz` `ph` `phn` `pm`
 NeuStar Email Confidence| `bco` `tea`
 Phone Ownership Validation| At least one of the following:<br> `ph` `phn` `pm`
-RapLeaf              | `tea`
+TowerData            | `tea`
 Sanctions Screening  | `bfn` `bln`
 TIN Verification     | At least one of the following:<br> `assn` `ataxid`
 Telesign             | At least one of the following:<br> `ph` `phn` `pm`
@@ -331,21 +331,43 @@ nv:10|	Jumio NetVerify: State Match
 nv:11|	Jumio NetVerify: Multi Document
 nv:12|	Jumio NetVerify: Scan ID
 nv:13|	Jumio NetVerify: Unsupported Country
+iv:0|   Mitek
+iv:1|   Mitek: Document Validity
+iv:2|   Mitek: Suspicious Document
+iv:4|   Mitek: First Name
+iv:5|   Mitek: First Name Match
+iv:6|   Mitek: Last Name
+iv:7|   Mitek: Last Name Match
+iv:8|   Mitek: Address
+iv:9|   Mitek: Date of Birth
+iv:10|  Mitek: Date of Birth Match
+iv:11|  Mitek: ID Expiration
+iv:12|  Mitek: Valid From Date
+iv:13|  Mitek: Document Number
+iv:14|  Mitek: Nationality
+iv:15|  Mitek: Nationality Verified
+iv:16|  Mitek: Issuing State or Organization Verified
+iv:17|  Mitek: Personal Number
+iv:18|  Mitek: Personal Number Verified
+iv:19|  Mitek: Composite Check Digit
+iv:20|  Mitek: Composite Check Digit Verified
+iv:21|  Mitek: Unsupported Country
+iv:22|  Mitek: Font Validation
+iv:23|  Mitek: Photo Integration Validation
 cq:1|	NeuStar/TargusInfo CQR: Valid Phone
 cq:2|	NeuStar/TargusInfo CQR
 cq:3|	NeuStar/TargusInfo CQR: Unsupported Country
 ev:1|	NeuStar/TargusInfo Email: Unsupported Country
 ev:3|	Neustar/TargusInfo Email Confidence
 po:1|	Phone Ownership: Correct Code Provided
-ra:0|	RapLeaf 
-ra:1|	RapLeaf: Email History
-ra:2|	RapLeaf: Email First Seen
-ra:3|	RapLeaf: Unsupported Country
+ra:0|	TowerData 
+ra:1|	TowerData: Email History
+ra:2|	TowerData: Email First Seen
+ra:3|	TowerData: Unsupported Country
 ss:0|	Sanctions Screening
 ss:1|	Sanctions Screening: Sanction Match
 ss:2|	Sanctions Screening: Sanction List
 ss:3|	Sanctions Screening: Sanction Entry Update
-ss:4|   Sanctions Screening: IP From Crimea
 ts:1|	Telesign PhoneID: Telesign
 ts:2|	Telesign PhoneID: Telephone Number Safe
 ts:3|	Telesign PhoneID: Telephone Country

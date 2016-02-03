@@ -130,15 +130,15 @@ Retrieve the current state of a merchant application:<br>
 		</tr>
 		<tr>
 			<td>scanData<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>If using Jumio NetVerify Perform, the document front side image data, Base64 encoded. If provided, this will override the configured Jumio client integration. 5MB maximum size.</td>
+			<td>Document front-side image data, Base64 encoded. 400KB minimum size, 4MB maximum size, color only.</td>
 		</tr>
 		<tr>
 			<td>faceImageData<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>If using Jumio NetVerify Perform with face match enabled, the face image file, Base64 encoded. 5MB maximum size.</td>
+			<td>Document face image data, Base64 encoded. 400KB minimum size, 4MB maximum size, color only.</td>
 		</tr>
 		<tr>
 			<td>backsideImageData<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>If using Jumio NetVerify Perform, the document back side image data, Base64 encoded. 5MB maximum size.</td>
+			<td>Document back-side image data, Base64 encoded. 400KB minimum size, 4MB maximum size, color only.</td>
 		</tr>
 		<tr>
 			<td>merchantAid<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
@@ -646,7 +646,7 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>redirectURL<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Jumio NetVerify document verification redirect URL.</td>
+			<td>Document verification redirect URL</td>
 		</tr>
 		<tr>
 			<th colspan=2>Questions Wrapper</th>
