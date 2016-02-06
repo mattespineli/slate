@@ -2,7 +2,7 @@
 Copyright 2008-2013 Concur Technologies, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may
-not use this file except in compliance with the License. You may obtain
+not use this file except in compliance with the License. You may obtai
 a copy of the License at
 
   http://www.apache.org/licenses/LICENSE-2.0
@@ -100,13 +100,6 @@ $search-box-border-color: #666;
 // These settings are probably best left alone.
 
 %break-words {
- -ms-word-break: break-all;
-     word-break: break-all;
-
-     /* Non standard for webkit */
-     word-break: break-word;
-
--webkit-hyphens: auto;
-   -moz-hyphens: auto;
-        hyphens: auto;
+    word-break: break-all;
+    hyphens: auto;
 }
