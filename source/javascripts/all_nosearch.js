@@ -1,3 +1,4 @@
-//= require ./lib/_energize
-//= require ./app/_lang
-//= require ./app/_toc
+//= require_tree ./lib
+//= require_tree ./app
+//= stub ./app/search.js
+//= stub ./lib/lunr.js
