@@ -10,16 +10,16 @@ Augur                | `dfp` `dft`
 Experian ProveID     | At least one of the following:<br> `bc` `bsn` `bz`
 IDAnalytics CertainID| `bc` `bfn` `bln` `bs` `bsn` `bz`
 IDAnalytics IDScore  | At least four of the following:<br>`bc` `bfn` `bln` `bs` `bsn` `bz`
-Idology ExpectID     | `bfn` `bln` `bs` are required,<br>in addition to either `assn` AND `dob`, or `bsn`,<br>and at least one of the following:<br> `bc` `bz`
+Idology ExpectID     | `bfn` `bln` `bs` are required,<br>AND either (`assn` + `dob`) OR `bsn`,<br>AND at least one of the following:<br> `bc` `bz`
 IDM Business Risk    | `bc` `bco` `bfn` `bln` `bs` `bsn` `bz`
 Idology ExpectID PA  | `bfn` `bln`
 MaxMind              | `ip`
-NeuStar CQR          | `bco` and at least one of the following:<br> `bc` `bfn` `bln` `bs` `bsn` `bz` `ph` `phn` `pm`
+NeuStar CQR          | `bco` AND at least one of the following:<br> `bc` `bfn` `bln` `bs` `bsn` `bz` `ph` `phn` `pm`
 NeuStar Email Confidence| `bco` `tea`
 Phone Ownership Validation| At least one of the following:<br> `ph` `phn` `pm`
 TowerData            | `tea`
 Sanctions Screening  | `bfn` `bln`
-TIN Verification     | At least one of the following:<br> `assn` `ataxid`
+TIN Verification     | For Merchant KYC, at least one of the following:<br> `assn` `ataxid` <br><br> For Consumer KYC: `assn` OR `ataxid`,<br> AND `amn` OR (`bfn` + `bln`)
 Telesign             | At least one of the following:<br> `ph` `phn` `pm`
 
 ## Sample Callbacks
