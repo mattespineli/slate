@@ -30,7 +30,7 @@ EXAMPLE SERVICE REQUEST
   "bz" : "55555",
   "bs" : "CA",
   "bsn" : "123 anystreet",
-  "dft" : "BC",
+  "dft" : "AU",
   "dfp" : "1872ABCD129E…",
   "ip" : "69.181.162.146",
   "tid" : "89",

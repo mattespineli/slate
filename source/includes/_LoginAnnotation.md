@@ -17,7 +17,7 @@ EXAMPLE SERVICE REQUEST
   "man" : "jdinh",
   "soc" : "facebook",
   "tea" : "james@gmail.com",
-  "dft" : "BC",
+  "dft" : "AU",
   "dfp" : "1872ABCD129E…",
   "ip" : "69.181.162.146",
   "tid" : "89"

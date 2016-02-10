@@ -28,7 +28,7 @@ EXAMPLE SERVICE REQUEST
 	"bz" : "55555",
   	"bs" : "CA",
   	"bsn" : "123 anystreet",
-  	"dft" : "BC",
+  	"dft" : "AU",
   	"dfp" : "1872ABCD129E…",
   	"pccn" : "4513bfe30439b317d3a504ecac74858965a89ce7",
   	"pcct" : "411111XXXXXX1111",
