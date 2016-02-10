@@ -8,6 +8,9 @@ Evaluate a consumer application for the provided user data:<br>
 Retrieve the current state of a consumer application:<br>
 `GET https://edna.identitymind.com/im/account/consumer/<transaction_id>`
 
+Retrieve the current state of a consumer application using reseller credentials:<br>
+`GET https://edna.identitymind.com/im/account/consumer/<merchant_api_name>/<transaction_id>`
+
 <aside class="notice">Not all fields are required, but transaction evaluation is more comprehensive when richer evidence is provided. For some third party tests, certain fields may be required. For a list of the required fields, see <a href="#third-party-requirements">Third Party Requirements</a>.</aside>
 
 
