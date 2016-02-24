@@ -636,16 +636,16 @@ EXAMPLE SERVICE RESPONSE DATA
 		</tr>
 		<tr>
 			<td>arpr<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
-			<td>Result of the automated review evaluation. Possible values are:
+			<td>Result of the automated review policy (ARP) evaluation. Possible values are:
 			<ul type="disc">
 					<li><code>ERROR</code></li>
-					<li><code>NO_POLICY</code></li>
-					<li><code>DISABLED</code></li>
-					<li><code>FILTERED</code></li>
-					<li><code>PENDING</code></li>
-					<li><code>FAIL</code></li>
-					<li><code>INDETERMINATE</code></li>
-					<li><code>SUCCESS</code></li>
+					<li><code>NO_POLICY</code> - Error, no ARP</li>
+					<li><code>DISABLED</code> - ARP is disabled</li>
+					<li><code>FILTERED</code> - The transaction did not pass ARP filters</li>
+					<li><code>PENDING</code> - The ARP is waiting for a response from a third party</li>
+					<li><code>FAIL</code> - An ARP rule fired and returned a failure</li>
+					<li><code>INDETERMINATE</code> - No ARP rule fired</li>
+					<li><code>SUCCESS</code> - An ARP rule fired and the transaction was accepted</li>
 				</ul></td>
 		</tr>
 				<tr>
