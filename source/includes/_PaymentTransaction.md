@@ -324,6 +324,10 @@ EXAMPLE SERVICE REQUEST
 			<td>The signup/affiliate creation date of the affiliate associated with this transaction. Either an <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> encoded string or a Unix timestamp.</td>
 		</tr>
 		<tr>
+			<td>accountCreationTime<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>User account creation time with the merchant in UTC. Encoded as a Unix timestamp or <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> string. Data containing milliseconds will not be accepted.</td>
+		</tr>        
+		<tr>
 			<td>blg<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
 			<td>Customer browser language. Values are defined in <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a>.</td>
 		</tr>
