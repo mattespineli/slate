@@ -74,7 +74,7 @@ Retrieve the current state of a consumer application:<br>
 			<td>Transaction identifier. If not provided, an ID will be allocated<br><br>Maximum length is 32 characters</td>
 		</tr>
 		<tr>
-			<td>man<br><font color=#446CB3>string</font><br><font color=#BDC3C7><i>optional</i></font></td>
+			<td>man<br><font color=#446CB3>string</font><br><font color=#CF000F><i>required</i></font></td>
 			<td>Account name for the user<br><br>Maximum length is 60 characters</td>
 		</tr>
 		<tr>
