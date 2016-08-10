@@ -692,8 +692,10 @@ IdentityMind Transaction API does not accept actual credit card number. It accep
 
 IdentityMind provides a client SDK for Java and PHP. If you use these languages, you can use the SDK to include the information in your request to the API. The SDK contains sample code on how to do that.
 
+
+
 <aside class="notice">The hash must be of the full card number, not a masked or tokenized representation.
-If you use other languages, please see "Credit Card Number Hash".</aside>
+If you use other languages, please see "Credit Card Number Hash".<br><br>If the credit card isn't available to hash, we ask that you provide the first name (lowercase), last name (lowercase), the first six digits of the card number, and the last four digits of the card number in a concatenated string, and then hash the string.</aside>
 
 
 ##### Credit Card Number Hash
